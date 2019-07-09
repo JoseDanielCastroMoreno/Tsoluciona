@@ -1,0 +1,120 @@
+/*FOOTER*/
+.footer{
+	background: #333333;
+	color: #fff;
+	bottom: 0;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+.footer-container{
+	display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+    padding: 0px 30px;
+}
+.footer-layout{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1.4fr;
+	grid-column-gap: 60px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.footer-layout ul{
+	list-style-type: none;
+}
+.footer-layout ul li{
+	padding: 3px 0px;
+}
+.footer-layout ul .list-icon{
+	padding-right: 16px;
+}
+.footer-layout .titulo{
+	/*font-size: 23px;*/
+	font-size: calc(12px + 1vw);
+	font-weight: 700;
+	text-decoration: underline;
+    padding-bottom: 15px;
+    
+}
+.footer-layout .titulo-redes-sociales{
+	font-size: 20px;
+	font-weight: 700;
+}
+.footer-layout .sobre-nosotros{
+	text-align: justify;
+	max-width: 275px;
+}
+.footer-layout .text-content{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.footer-layout .sobre-nosotros-img{
+	width: 100%;
+    object-fit: contain;
+    height: 80px;
+}
+.footer-layout .horario{
+	display: grid;
+	grid-template-columns: 1fr 150px;
+}
+.footer-layout .redes{
+	margin-top: 20px;
+	display: flex;
+}
+.footer-layout .redes-sociales{
+	padding-left: 10px;
+	display: flex;
+	align-items: flex-start;
+}
+.footer-layout .redes-sociales a{
+	text-decoration-style: none;
+	color: #e6e6e6;
+	padding: 0px 5px;
+	font-size: 20px;
+}
+.footer-layout .redes-sociales a:hover{
+	color: #fff;
+}
+
+/*COPYRIGHT*/
+.copyright-container{
+	display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+	background-color: #1d1d1d;
+	color: #fff;
+  	font-size: 15px;
+  	padding: 15px 5px;
+  	font-family: 'Lato', sans-serif;
+}
+.copyright-content{
+	display: flex;
+  	justify-content: space-between;
+  	padding: 0px 20px;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 720px){
+	.footer-layout{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+		font-size: calc(10px + 1vw);
+	}
+	.footer-layout .horario{
+		display: grid;
+		grid-template-columns: 1.2fr 2fr;
+	}
+	.footer-layout .redes-sociales a,
+	.footer-layout .titulo-redes-sociales{
+		font-size: calc(10px + 1vw);
+	}
+	.copyright-content{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: calc(6px + 1vw);
+	}
+}
